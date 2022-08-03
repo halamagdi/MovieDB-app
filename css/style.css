@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+/********************************* movies section ***************************/
+
+
+.label-control {
+    border-radius: 0 !important;
+    border-color: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .7) !important;
+    /* margin-top: 70px; */
+}
+
+.movies {
+    position: relative;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .7);
+    opacity: 0;
+    transition: all .8s ease;
+}
+
+.info {
+    text-align: center;
+    font-weight: 500;
+}
+
+.info h2 {
+    font-weight: 400;
+}
+
+.movies:hover .layer {
+    opacity: 1;
+    height: 100%;
+}
+
+/********************************* sideBar section ***************************/
+
+.sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.tab-menu {
+    float: left;
+    z-index: 999999;
+    width: 250px;
+    height: 100vh;
+    background-color: #000;
+    text-align: center;
+   
+}
+
+.side-sec {
+    float: left;
+    z-index: 9999999;
+    width: 60px;
+    height: 100vh;
+    background-color: #f8f6f6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.tab-menu ul li {
+    list-style: none;
+    padding: 10px 0;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+  opacity: 0;
+
+ 
+}
+
+.tab-menu ul li a:hover {
+    color: rgb(190, 41, 41);
+}
+
+.menu-list {
+    color: white;
+    text-decoration: none;
+    
+}
+.tab-menu .item1 , .tab-menu .item2 ,.tab-menu .item3 , .tab-menu .item4 ,.tab-menu .item5 , .tab-menu .item6 {
+    
+    padding-top: 250px;
+}
+
+.social-icon{
+    margin-top: 200px;
+    color: white;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.facebook-icon:hover{
+    color: rgb(190, 41, 41);
+}
+.twitter-icon:hover{
+    color: rgb(190, 41, 41);
+
+}
+.globe-icon:hover{
+    color: rgb(190, 41, 41);
+
+}
+.paragraph{
+    margin-left: 30px;
+    text-align: left;
+}
+
+.error-alert{
+    
+    border-color:  #f5c2c7;
+    height: 70px;
+    background-color: #f8d7da;
+   color: #842029;
+    border-radius: .25rem;
+    text-align: center;
+    font-size: 16px;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    display: none;
+}

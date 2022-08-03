@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Js Exam</title>
+</head>
+
+<body>
+    <!-- movies section  -->
+    <section>
+        <div class="container  my-5 ">
+            <div class=" d-flex mx-auto  ">
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent mx-5 my-5"
+                        placeholder="get movies by word..." type="text" name="wordSearch" id="wordSearch">
+                </div>
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent my-5"
+                        placeholder="Search.." type="text" name="" id="apiSearch">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="postRow">
+
+            </div>
+        </div>
+
+        <!-- sideBar section -->
+
+
+
+
+    </section>
+
+    <div id="sideMenu" class="sideMenu">
+
+        <div class="tab-menu">
+            <ul>
+                <li class="item1"><a class="menu-list" valueKey="movie/now_playing" href="#">Now Playing</a></li>
+                <li class="item2"><a class="menu-list" valueKey="movie/popular" href="#">Popular</a></li>
+                <li class="item3"><a class="menu-list" valueKey="movie/top_rated" href="#">Top Rated</a></li>
+                <li class="item4"><a class="menu-list" valueKey="trending/movie/day" href="#">Trending</a></li>
+                <li class="item5"><a class="menu-list" valueKey="movie/upcoming" href="#">Upcoming</a></li>
+                <li class="item6"><a class="menu-list" href="#contactUs">Contact us</a></li>
+
+            </ul>
+            <div class="social-icon fs-6 d-flex ">
+                <div class="facebook-icon ">
+                    <i class="fab fa-facebook-f mx-2"></i>
+                </div>
+                <div class="twitter-icon ">
+                    <i class="fab fa-twitter mx-2"></i>
+                </div>
+                <div class="globe-icon">
+                    <i class="fas fa-globe mx-2"></i>
+                </div>
+
+            </div>
+            <div class="paragraph my-3 text-muted fs-6 ">
+                <p>Copyright Â© 2019 All Rights <br> Reserved.</p>
+
+            </div>
+        </div>
+
+        <div class="side-sec">
+            <div class="side-logo">
+                <img src="images/logo.png" class="w-50 py-4" alt="">
+            </div>
+            <div class="tab-menu-icon " id="toggleBtn">
+                <i class="fa fa-align-justify  fs-3"></i>
+            </div>
+            <div class="down-icons fs-5 ">
+                <div class="global-icon ">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="share-icon py-4">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <section id="contactUs">
+        <div class="container my-5 ">
+            <div class="contact text-light my-5 fs-3 mx-4">
+                <h2>ContacUs...</h2>
+            </div>
+
+            <div class=" d-flex mx-auto  ">
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent mx-5 "
+                        placeholder="Enter Your Name" type="text" name="" id="userName">
+                    <div class=" text-center w-75 mx-5 error-alert" id="nameInputAlert"> Your Name is not valid </div>
+                </div>
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent "
+                        placeholder="Enter Email" type="email" name="" id="userEmail">
+                        <div class=" text-center w-75 error-alert" id="emailInputAlert"> Entre Valid Email </div>
+                </div>
+
+            </div>
+            <div class=" d-flex mx-auto my-3 ">
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent mx-5 "
+                        placeholder="Enter Phone" type="number" name="" id="userPhone">
+                        <div class="error-alert text-center w-75 mx-5" id="phoneInputAlert"> Entre Valid Phone </div>
+                </div>
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent "
+                        placeholder="Enter Age" type="number" name="" id="userAge">
+                        <div class="error-alert text-center w-75  " id="ageInputAlert"> Entre Valid Age </div>
+                </div>
+
+            </div>
+            <div class=" d-flex mx-auto my-3 ">
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent mx-5 "
+                        placeholder="Enter Password" type="text" name="" id="userPass">
+                        <div class="error-alert text-start w-75 mx-5" id="passInputAlert"> entre valid password *Minimum eight characters, at least one letter and one number:* </div>
+                </div>
+                <div class="col-md-6">
+                    <input class="label-control w-75 text-center text-white form-control bg-transparent "
+                        placeholder="Enter REPassword" type="text" name="" id="userRePass">
+                        <div class="error-alert text-center w-75  " id="rePassInputAlert"> Entre Valid RePassword </div>
+                </div>
+
+
+            </div>
+            <div class="submit-btn ">
+                <button class="btn btn-outline-danger mx-5" id="submitBtn">Submit</button>
+            </div>
+
+
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
